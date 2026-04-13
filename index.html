@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="app-title">
+      <h1 id="app-title" class="title">Fibonacci Visualizer</h1>
+
+      <div class="numbers" role="group" aria-label="Current Fibonacci pair">
+        <div class="number-block">
+          <span class="label">Previous</span>
+          <span id="prev" class="value" aria-live="polite">0</span>
+        </div>
+        <div class="number-block">
+          <span class="label">Current</span>
+          <span id="curr" class="value" aria-live="polite">1</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="btn-next" class="btn btn-primary">Next</button>
+        <button type="button" id="btn-reset" class="btn">Reset</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
